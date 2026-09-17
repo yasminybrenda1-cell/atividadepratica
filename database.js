@@ -24,9 +24,16 @@ const db = new sqlite3.Database('petamigos.db', (err) => {
 // Exemplo de estrutura (incompleto — complete você mesmo):
 //   CREATE TABLE IF NOT EXISTS tutores ( ... )
 
-db.run(
-  `/* seu comando SQL aqui */`,
-  (err) => {
+
+db.run(`
+  CREATE TABLE IF NOT EXISTS tutores (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    email TEXT NOT NULL,
+    telefone TEXT NOT NULL,
+    servico TEXT NOT NULL
+  )
+   `, (err) => {
     if (err) {
       console.error('Erro ao criar tabela:', err.message);
     } else {

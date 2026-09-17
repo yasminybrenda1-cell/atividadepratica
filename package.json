@@ -9,10 +9,16 @@
   },
   "dependencies": {
     "body-parser": "^1.20.2",
+    "cors": "^2.8.6",
     "express": "^4.18.2",
     "sqlite3": "^5.1.6"
   },
-  "keywords": ["senai", "sqlite", "node", "express"],
+  "keywords": [
+    "senai",
+    "sqlite",
+    "node",
+    "express"
+  ],
   "author": "SENAI — Técnico em Desenvolvimento de Sistemas",
   "license": "ISC"
 }
